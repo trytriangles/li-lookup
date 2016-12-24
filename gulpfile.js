@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const elm = require('gulp-elm');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
-const copy = require('gulp-copy');
 const flatten = require('gulp-flatten');
 
 gulp.task('default', [
