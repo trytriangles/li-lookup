@@ -8,7 +8,6 @@ A visual tool for looking up and filtering users of a Lithium community based on
 git clone https://github.com/ryantriangles/li-lookup.git
 cd li-lookup
 npm install
-elm-package install -y
 npm run build
 npm run start
 ```
