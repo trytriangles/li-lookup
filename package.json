@@ -1,0 +1,28 @@
+{
+  "name": "lithium-lookup",
+  "version": "1.0.0",
+  "description": "Visual user lookup tool for Lithium communities",
+  "main": "src/backend/index.js",
+  "scripts": {
+    "build": "gulp",
+    "start": "node src/backend/index.js"
+  },
+  "keywords": [
+    "Lithium"
+  ],
+  "author": {
+    "name": "Ryan Plant",
+    "email": "ryan@ryanplant.net"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "elm": "^0.18.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-elm": "^0.6.1",
+    "gulp-flatten": "^0.3.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "request": "^2.79.0"
+  }
+}

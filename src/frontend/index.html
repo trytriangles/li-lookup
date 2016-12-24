@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>NI Email Search</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<script src="Main.js"></script>
+	<script>
+		let app = Elm.Main.fullscreen();
+
+    // Saves the current user list as a CSV file.
+		const download = (content) => {
+		    let a = document.createElement('a');
+		    let mimeType = 'text/csv';
+
+        a.href = 'data:' + mimeType + ',' + encodeURIComponent(content);
+        a.setAttribute('download', 'users.csv');
+        document.body.appendChild(a);
+        setTimeout(_ => {
+            a.click();
+            document.body.removeChild(a);
+        }, 100);
+        return true;
+		};
+
+		app.ports.emitCSV.subscribe(list => download(list));
+	</script>
+</body>
+</html>
